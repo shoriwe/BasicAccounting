@@ -1,0 +1,31 @@
+﻿<Window x:Class="BasicAccounting.SearchResultsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicAccounting"
+        mc:Ignorable="d"
+        Title="SearchResultsDialog" Height="476.659" Width="400.118"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="SearchResultsSummatory" FontSize="17" Width="340" Background="#f1c40f" TextAlignment="Right"/>
+                <Button Name="SearchResultsCurrencyButton" Content="USD" Width="50" Background="#3498db"  Click="Select_currency" FontSize="17"/>
+            </StackPanel>
+            <Grid Background="#2c3e50">
+                <Button Content="Delete" HorizontalAlignment="Right" Background="#e74c3c" Click="Delete_selected_rows" FontSize="17"/>
+            </Grid>
+            <Button Content="Show row" Click="Show_row"/>
+            <DataGrid Name="SearchResultsDialogDataGrid" Height="380" AutoGenerateColumns="False" ColumnWidth="*" CanUserAddRows="False" Margin="0,0,-0.4,0">
+                <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="Select" Binding="{Binding Selected}"/>
+                    <DataGridTextColumn Header="Date" Binding="{Binding Date}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Category" Binding="{Binding Category}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Amount" Binding="{Binding Amount}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="currency" Binding="{Binding Currency}" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="BasicAccounting.InsertRegistryDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicAccounting"
+        mc:Ignorable="d"
+        Title="InsertRegistryDialog" Height="479.858" Width="338.27"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Background="#bdc3c7" Width="328.27">
+            <Button Content="Add" FontSize="20" HorizontalAlignment="Right" Width="60" Background="#2ecc71" BorderThickness="0" Margin="0,0,5,0" Click="Insert_data_in_database"/>
+            <TextBox Name="InsertRegistryDialogAmountBox" Text="0.00" FontSize="20" MaxLines="1" Width="323.27" TextAlignment="Right" Background="#f1c40f" BorderThickness="0" HorizontalAlignment="Left" VerticalContentAlignment="Center"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Category:" FontSize="20" HorizontalAlignment="Right" Width="159.135" VerticalAlignment="Center" TextAlignment="Center"/>
+                <Button Name="InsertRegistryDialogCategoryButton" Content="Category" FontSize="20" HorizontalAlignment="Right" Width="159.135" BorderThickness="0" Click="Select_category"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Currency:" FontSize="20" Width="159.135" TextAlignment="Center" VerticalAlignment="Center"/>
+                <Button Name="InsertRegistryDialogCurrencyButton" Content="Currency" FontSize="20" Width="159.135" BorderThickness="0" Click="Select_currency"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Date:" FontSize="20" Width="159.135" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox Name="InsertRegistryDialogDateBox" Width="159.135" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="25">
+                <TextBlock Text="Type:" Width="139.135" TextAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+                <RadioButton Name="InsertRegistryDialogIncomeRadioButton" GroupName="Type" Content="Income" HorizontalContentAlignment="Center" Width="92.0675" FontSize="16"/>
+                <RadioButton Name="InsertRegistryDialogOutcomeRadioButton" GroupName="Type" Content="Outcome" HorizontalContentAlignment="Center" Width="92.0675" FontSize="16"/>
+            </StackPanel>
+            <TextBox Name="InsertRegistryDialogDescriptionBox" Height="304" Background="#ecf0f1" BorderThickness="0" FontSize="17"/>
+        </StackPanel>
+    </Grid>
+</Window>

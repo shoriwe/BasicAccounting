@@ -1,0 +1,30 @@
+﻿<Window x:Class="BasicAccounting.SelectCategoryDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicAccounting"
+        mc:Ignorable="d"
+        Title="SelectCategoryDialog" Height="484.123" Width="400.118"
+        ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Background="#7f8c8d">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Name="SelectCategoryDialogDeleteButton" Content="Delete" Background="#e74c3c" BorderThickness="0" FontSize="17" Click="Delete_selected_rows"/>
+                <Button Name="SelectCategoryDialogAddButton" Content="Add" Background="#2ecc71" BorderThickness="0" FontSize="17" Click="Add_new_category"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="SelectCategoryDialogSearchQuery" Background="#ecf0f1" Width="334" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" MaxLines="1" MaxLength="18"/>
+                <Button Name="SelectCategoryDialogSearchButton" Content="Search" FontSize="19" Background="#3498db" BorderThickness="0" Click="Filter_currencies_by_name"/>
+            </StackPanel>
+            <Button Name="SelectCategoryDialogSelectButton" Content="Select" Background="#16a085" Click="Currency_selected"/>
+            <DataGrid Name="SelectCategoryDialogDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" ColumnWidth="*" Height="392">
+                <DataGrid.Columns>
+                    <DataGridCheckBoxColumn Header="Delete Selection" Binding="{Binding Selected}"/>
+                    <DataGridTextColumn Header="Category name" Binding="{Binding Category_name}" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+    </Grid>
+</Window>

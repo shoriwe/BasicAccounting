@@ -1,0 +1,16 @@
+﻿<Window x:Class="BasicAccounting.InvalidInputDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicAccounting"
+        mc:Ignorable="d"
+        Title="InvalidInputDialog" Height="209.005" Width="337.204">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Name="InvalidInputDialogTexBlock" TextAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Content="Ok" HorizontalAlignment="Center" Width="40" Click="Ok_button_pressed"  Background="#2ecc71" BorderThickness="0"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
