@@ -17,9 +17,9 @@ namespace BasicAccounting
     /// <summary>
     /// Interaction logic for NoResultssDialog.xaml
     /// </summary>
-    public partial class NoResultssDialog : Window
+    public partial class NoResultsDialog : Window
     {
-        public NoResultssDialog()
+        public NoResultsDialog()
         {
             InitializeComponent();
         }
