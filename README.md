@@ -10,4 +10,4 @@ To make everything the easy way, please follow this steps
 3) Press the build button
 ### Binary
 
-An already compiled binary and  its dependencies can be located at `REPOSITORY_PATH/binaries/bin.zip`
+An already compiled binary and  its dependencies can be located in `release` [section](https://github.com/shoriwe/BasicAccounting/releases)
