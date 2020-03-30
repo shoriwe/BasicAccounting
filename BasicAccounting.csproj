@@ -100,8 +100,8 @@
     <Compile Include="InvalidInputDialog.xaml.cs">
       <DependentUpon>InvalidInputDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NoResultssDialog.xaml.cs">
-      <DependentUpon>NoResultssDialog.xaml</DependentUpon>
+    <Compile Include="NoResultsDialog.xaml.cs">
+      <DependentUpon>NoResultsDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="SearchResultsDialog.xaml.cs">
       <DependentUpon>SearchResultsDialog.xaml</DependentUpon>
@@ -150,7 +150,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NoResultssDialog.xaml">
+    <Page Include="NoResultsDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

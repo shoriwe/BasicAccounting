@@ -76,7 +76,7 @@ namespace BasicAccounting
                     }
                 } else
                 {
-                    NoResultssDialog no_results_dialog = new NoResultssDialog();
+                    NoResultsDialog no_results_dialog = new NoResultsDialog();
                     no_results_dialog.ShowDialog();
                 }
             }
